@@ -1,1 +1,14 @@
 @import './base.css';
+
+.main {
+  padding: 150px;
+}
+
+.main_heading {
+  font-size: 128px;
+  font-weight: bold;
+}
+
+.main_sub-heading {
+  font-size: 40px;
+}
