@@ -1,2 +1,12 @@
 @import './base.css';
 
+.shopping-cart-icon--primary g path {
+  fill: var(--color-primary);
+}
+.speakers .main_title {
+  font-size: 98px;
+}
+
+main img {
+  width: 50%;
+}

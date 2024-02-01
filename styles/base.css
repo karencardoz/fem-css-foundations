@@ -11,8 +11,18 @@
 
 body {
   font-family: var(--font-family);
+}
+.main {
+  padding: 150px;
+}
+
+.body--primary {
   background-color: var(--color-primary);
   color: var(--color-text-on-primary);
+}
+.body--secondary {
+  background-color: var(--color-text-on-primary);
+  color: var(--color-primary);
 }
 
 p {
@@ -30,14 +40,14 @@ a {
   grid-template-rows: 1fr;
   grid-template-areas: 'logo nav shopping-cart';
   align-items: center;
-  padding-left: 0 60px;
+  justify-content: flex-end;
 }
 .header_link {
   font-size: 40px;
   text-decoration: none;
 }
 
-header img {
+.header svg {
   grid-area: shopping-cart;
 }
 
