@@ -58,3 +58,9 @@ main img {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 840px) {
+  .nav {
+    background: var(--color-text-on-primary);
+  }
+}
