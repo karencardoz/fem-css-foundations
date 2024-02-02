@@ -10,3 +10,51 @@
 main img {
   width: 50%;
 }
+
+.speaker_photo {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  margin-bottom: 36px;
+}
+
+.speaker_photo--top {
+  object-position: top;
+}
+
+.speaker_name {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.speakers_company {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.speakers_bio {
+  font-size: 20px;
+}
+
+.speaker_company,
+.speaker_bio {
+  color: var(--color-text-on-secondary);
+}
+
+.speakers_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 120px;
+  column-gap: 200px;
+}
+
+.speaker_wrapper {
+  max-width: 460px;
+}
+
+@media (width< 1000px) {
+  .speakers_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
