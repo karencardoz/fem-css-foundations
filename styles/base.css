@@ -24,7 +24,6 @@ body {
   background-color: var(--color-text-on-primary);
   color: var(--color-primary);
 }
-
 p {
   margin: 0;
 }
@@ -47,7 +46,7 @@ a {
   text-decoration: none;
 }
 
-.header svg {
+.header shopping-cart {
   grid-area: shopping-cart;
 }
 
@@ -105,6 +104,10 @@ a {
   vertical-align: middle;
 }
 
+.menu {
+  display: none;
+}
+
 @media (max-width: 1220px) {
   .button {
     font-size: 24px;
@@ -113,6 +116,31 @@ a {
   }
   .button img {
     width: 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 33px 1fr 34px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu {
+    display: block;
+  }
+  .nav {
+    display: none;
   }
 }
 
